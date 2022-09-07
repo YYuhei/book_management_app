@@ -1,0 +1,8 @@
+streamlit
+streamlit-aggrid
+streamlit_option_menu
+streamlit_authenticator
+sqlite3
+requests
+pandas
+st_aggrid
