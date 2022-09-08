@@ -74,7 +74,7 @@ if authentication_status:
                 result = requests.get("https://www.googleapis.com/books/v1/volumes?q=isbn:"+isbn)
                 # 返却されたJSONを辞書型に変換
                 data = result.json()
-                st.write(date)
+                st.write(data)
                 # 表示項目の設定(存在しない項目は"-"で表示)
                 if "title" in data["items"][0]["volumeInfo"]:
                     title = data["items"][0]["volumeInfo"]["title"]
