@@ -71,7 +71,7 @@ if authentication_status:
         if isbn is not None:
 #             try:
                 # GoogleBooksにAPIを投げる(1,000回/日まで可能)
-                result = requests.get("https://www.googleapis.com/books/v1/volumes?q=isbn:"+isbn)
+                result = requests.get("https://www.googleapis.com/books/v1/volumes?country=JP&q=isbn:"+isbn)
                 # 返却されたJSONを辞書型に変換
                 data = result.json()
                 st.write(data)
