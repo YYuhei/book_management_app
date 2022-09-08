@@ -69,7 +69,7 @@ if authentication_status:
     if selected == "書籍登録":
         isbn = st.text_input('ISBNコードを入力してください')        
         if isbn is not None:
-             try:
+            try:
                 # GoogleBooksにAPIを投げる(1,000回/日まで可能)
                 result = requests.get("https://www.googleapis.com/books/v1/volumes?country=JP&q=isbn:"+isbn)
                 # 返却されたJSONを辞書型に変換
