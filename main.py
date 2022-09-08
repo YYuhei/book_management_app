@@ -69,12 +69,11 @@ if authentication_status:
     if selected == "書籍登録":
         isbn = st.text_input('ISBNコードを入力してください')        
         if isbn is not None:
-#             try:
+             try:
                 # GoogleBooksにAPIを投げる(1,000回/日まで可能)
                 result = requests.get("https://www.googleapis.com/books/v1/volumes?country=JP&q=isbn:"+isbn)
                 # 返却されたJSONを辞書型に変換
                 data = result.json()
-                st.write(data)
                 # 表示項目の設定(存在しない項目は"-"で表示)
                 if "title" in data["items"][0]["volumeInfo"]:
                     title = data["items"][0]["volumeInfo"]["title"]
@@ -129,8 +128,8 @@ if authentication_status:
                             isbn,
                         )
                         st.success("本を登録しました："+title)
-#             except:
-#                 st.write("通信エラー")
+            except:
+                st.write("通信エラー")
 
     if selected == "書籍管理":
         crud.read_booklist("control", name)
