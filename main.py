@@ -24,8 +24,7 @@ if authentication_status == False:
 
 if authentication_status == None:
     st.warning("UsernameとPasswordを入力してください")
-    st.write("※ゲストアカウントはこちら")
-    st.write("Username：gest , Password：12345")
+    st.write("※ゲストアカウントはこちら→ Username：gest , Password：12345")
 
 if authentication_status:
     # 最終ログイン日時を更新
