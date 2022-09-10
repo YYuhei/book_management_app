@@ -20,10 +20,10 @@ authenticator = stauth.Authenticate(
 name, authentication_status, username = authenticator.login("ログイン", "main")
 
 if authentication_status == False:
-    st.error("Usernameまたはpasswordが一致していません")
+    st.error("UsernameまたはPasswordが一致していません")
 
 if authentication_status == None:
-    st.warning("Usernameとpasswordを入力してください \n ※ゲストアカウントはこちら \n Username：gest　　　password：12345")
+    st.warning("UsernameとPasswordを入力してください \nline ※ゲストアカウントはこちら \nline Username：gest　　　password：12345")
 
 if authentication_status:
     # 最終ログイン日時を更新
