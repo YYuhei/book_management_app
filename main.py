@@ -23,7 +23,8 @@ if authentication_status == False:
     st.error("UsernameまたはPasswordが一致していません")
 
 if authentication_status == None:
-    st.warning("UsernameとPasswordを入力してください \n ※ゲストアカウントはこちら \n Username：gest　　　password：12345")
+    st.warning("UsernameとPasswordを入力してください")
+    st.write("※ゲストアカウントはこちら \n Username：gest　　　password：12345")
 
 if authentication_status:
     # 最終ログイン日時を更新
