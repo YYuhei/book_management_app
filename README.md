@@ -22,5 +22,11 @@ PythonのフレームワークStreamlitを用いた社内向けの書籍貸出�
 　　　　　　　　　削除ボタンでDBから書籍情報を削除する。
 
 ## 参考サイト
-Streamlit公式
+Streamlit公式  
 https://streamlit.io/
+
+Streamlitの使い方の細かいところ  
+https://zenn.dev/ohtaman/articles/streamlit_tips
+
+How to Add a User Authentication Service (Login Form) in Streamlit   
+https://www.youtube.com/watch?v=JoFGrSRj4X4
